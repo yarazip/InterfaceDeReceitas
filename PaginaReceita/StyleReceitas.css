@@ -30,7 +30,7 @@
 
 .dark-mode {
     /* Tema Escuro */
-    --bg-color: #343131;        /* Fundo principal */
+    --bg-color: #343131;        
     --text-color: #E5D0AC;      /* Texto principal */
     --primary-color: #D8A25E;   /* Cor primária - dourado */
     --secondary-color: #A04747; /* Cor secundária - vinho */
