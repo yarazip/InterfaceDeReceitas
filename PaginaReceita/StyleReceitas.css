@@ -5,22 +5,21 @@
     --main-font: 'Source Sans 3', sans-serif;
 
     /* Tema Claro */
-    --bg-color: #FEF9E1;        /* Fundo principal */
-    --text-color: #343131;      /* Texto principal */
-    --primary-color: #C14600;   /* Cor primária - laranja escuro */
-    --secondary-color: #FF9D23; /* Cor secundária - laranja claro */
-    --accent-color: #E5D0AC;    /* Cor de destaque */
-    --card-bg: #FFFFFF;         /* Fundo de cards */
-    --header-border: #FF9D23;   /* Borda do cabeçalho */
-    --footer-bg: #343131;       /* Fundo do rodapé */
-    --footer-text: #FEF9E1;     /* Texto do rodapé */
-    --footer-link: #FF9D23;     /* Links do rodapé */
-    --shadow-color: rgba(195, 70, 0, 0.1); /* Sombras */
-    --testimonial-bg: #E5D0AC;  /* Fundo de depoimentos */
-    --hero-bg: #FEF9E1;         /* Fundo do herói */
-    --button-bg: #C14600;       /* Fundo de botões */
-    --button-text: #FEF9E1;     /* Texto de botões */
-    --hover-color: #FF9D23;     /* Cor de hover */
+    --bg-color: #FEF9E1;     
+    --text-color: #343131;   
+    --primary-color: #C14600;  
+    --secondary-color: #FF9D23;
+    --accent-color: #E5D0AC; 
+    --card-bg: #FFFFFF;     
+    --header-border: #FF9D23;   
+    --footer-bg: #343131;    
+    --footer-text: #FEF9E1;  
+    --footer-link: #FF9D23;  
+    --shadow-color: rgba(195, 70, 0, 0.1);
+    --testimonial-bg: #E5D0AC;  
+    --hero-bg: #FEF9E1;   
+    --button-bg: #C14600;      
+    --button-text: #FEF9E1;     
     
     /* Carrossel */
     --carousel-control-bg: rgba(255, 255, 255, 0.7);
@@ -31,19 +30,17 @@
 .dark-mode {
     /* Tema Escuro */
     --bg-color: #343131;        
-    --text-color: #E5D0AC;      /* Texto principal */
-    --primary-color: #D8A25E;   /* Cor primária - dourado */
-    --secondary-color: #A04747; /* Cor secundária - vinho */
-    --accent-color: #EEDF7A;    /* Cor de destaque - amarelo claro */
-    --card-bg: #434040;         /* Fundo de cards */
-    --header-border: #D8A25E;   /* Borda do cabeçalho */
-    --footer-bg: #1A1A1A;       /* Fundo do rodapé */
-    --footer-text: #E5D0AC;     /* Texto do rodapé */
-    --footer-link: #D8A25E;     /* Links do rodapé */
-    --shadow-color: rgba(0, 0, 0, 0.3); /* Sombras #FFF0DC
-    #F0BB78
-    #543A14
-    #131010*/
+    --text-color: #E5D0AC;  
+    --primary-color: #D8A25E;   
+    --secondary-color: #ff5500; 
+    --accent-color: #EEDF7A;    
+    --card-bg: #434040;    
+    --header-border: #D8A25E;  
+    --footer-bg: #1A1A1A;   
+    --footer-text: #E5D0AC; 
+    --footer-link: #D8A25E; 
+    --shadow-color: rgba(0, 0, 0, 0.3); 
+   
     --testimonial-bg: #434040;  /* Fundo de depoimentos */
     --hero-bg: #343131;         /* Fundo do herói */
     --button-bg: #D8A25E;       /* Fundo de botões */
