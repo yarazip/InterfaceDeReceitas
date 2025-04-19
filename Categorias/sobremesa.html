@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="StyleReceitas.css">
+        <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="Receitas.js"></script>
+    <title>Doces | Código de Sabores</title>
+
+    
+    <style>
+:root {
+    /* Nova Paleta de Cores */
+    --bg-color: #F1E7E7;         /* Cor de fundo principal */
+    --text-color: #333333;       /* Cor do texto (escuro para melhor contraste) */
+    --primary-color: #E69DB8;    /* Cor primária - rosa mais forte */
+    --secondary-color: #FFD0C7;  /* Cor secundária - rosa claro */
+    --accent-color: #FFFECE;     /* Cor de destaque - amarelo claro */
+    --card-bg: #FFFFFF;          /* Fundo dos cards (branco para melhor legibilidade) */
+    --header-border: #E69DB8;    /* Borda do cabeçalho */
+    --footer-bg: #E69DB8;        /* Fundo do rodapé */
+    --footer-text: #FFFFFF;      /* Texto do rodapé */
+    --footer-link: #FFFECE;      /* Links do rodapé */
+    --shadow-color: rgba(230, 157, 184, 0.2); /* Sombra suave */
+    --testimonial-bg: #FFD0C7;   /* Fundo de seções de depoimentos */
+    --hero-bg: #F1E7E7;          /* Fundo da seção hero */
+    --button-bg: #E69DB8;        /* Fundo dos botões */
+    --button-text: #FFFFFF;      /* Texto dos botões */
+}
+
+    
+    .dark-mode {
+        /* Tema Escuro com nova paleta */
+        --bg-color: #000000;
+        --text-color: #ffffff;
+        --primary-color: #FF9D23;
+        --secondary-color: #C14600;
+        --accent-color: #ef9610;
+        --card-bg: #2C2D34;
+        --header-border: #F2910A;
+        --footer-bg: #000000;
+        --footer-text: #EFD510;
+        --footer-link: #F2910A;
+        --shadow-color: rgba(0, 0, 0, 0.4);
+    
+        --testimonial-bg: #2C2D34;
+        --hero-bg: #1a1717;
+        --button-bg: #bb2200;
+        --button-text: #ffffff;
+        --hover-color: #F2910A;
+    
+        /* Carrossel */
+        --carousel-control-bg: rgba(0, 0, 0, 0.6);
+        --carousel-indicator: rgba(242, 145, 10, 0.5);
+        --carousel-indicator-active: #F2910A;
+    }
+    
+        </style>
+</head>
+<body class="light-mode">
+    <header>
+        <h1 class="logo">Código de Sabores</h1>
+        <nav class="nav-links">
+            <div class="categories-dropdown">
+                <a href="../PaginaDasReceitas/Receitas.html" class="active">Receitas <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="../Categorias/animes.html">Anime</a>
+                    <a href="../Categorias/aves.html">Aves</a>
+                    <a href="../Categorias/bovinos.html">Carnes Bovinas</a>
+                    <a href="../Categorias/suinos.html">Carnes Suínas</a>
+                    <a href="../Categorias/sobremesa.html">Doces</a>
+                    <a href="../Categorias/massa.html">Massas</a>
+                    <a href="../Categorias/peixe.html">Peixes</a>
+                    <a href="../Categorias/vegetariano.html">Vegetarianas</a>
+                    <a href="../PaginaDasReceitas/Receitas.html">Todas</a>
+                </div>
+            </div>
+            <a href="../sobre/sobre.html">Sobre Nós</a>
+            <a href="../contato/contato.html">Fale Conosco</a>
+        </nav>
+        <div class="header-right">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+            <div class="header-buttons">
+                <a href="../loginSenha/login.html" class="get-started-btn">Entrar</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="recipes-header">
+        <h1>Receitas de Doces</h1>
+        <p>Deliciosas sobremesas para adoçar seu dia</p>
+    </section>
+
+    <div class="recipes-container">
+        <div class="recipes-filters">
+            <button class="filter-btn">Anime</button>
+            <button class="filter-btn">Aves</button>
+            <button class="filter-btn">Carnes Bovinas</button>
+            <button class="filter-btn">Carnes Suínas</button>
+            <button class="filter-btn active">Doces</button>
+            <button class="filter-btn">Massas</button>
+            <button class="filter-btn">Peixes</button>
+            <button class="filter-btn">Vegetarianas</button>
+            <button class="filter-btn">Todas</button>
+        </div>
+        
+        <div class="featured-recipes">
+            <h2 class="section-title">Doces em Destaque</h2>
+            <div class="recipes-grid">
+                <!-- Brigadeiro -->
+                <div class="recipe-card">
+                    <a href="../Receitas/Brigadeiro.html">
+                        <img src="../assets/brigadeiro.jpeg" alt="Brigadeiro Gourmet" class="recipe-img">
+                    </a>
+                    <div class="recipe-info">
+                        <h3 class="recipe-title"><a href="../Receitas/Brigadeiro.html">Brigadeiro Gourmet</a></h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 30 min</span>
+                            <span><i class="fas fa-utensils"></i> 20 unidades</span>
+                        </div>
+                        <p>Brigadeiro com chocolate 50% cacau e toque de flor de sal.</p>
+                        <div class="recipe-categories">
+                            <span class="category-tag">Doces</span>
+                            <span class="category-tag">Brasileira</span>
+                        </div>
+                        <div class="recipe-author">
+                            <img src="../assets/chef2.jpg" alt="Chef João" class="author-avatar">
+                            <span>Chef João</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pudim -->
+                <div class="recipe-card">
+                    <a href="../Receitas/pudim.html">
+                        <img src="../assets/pudim.jpg" alt="Pudim de Leite" class="recipe-img">
+                    </a>
+                    <div class="recipe-info">
+                        <h3 class="recipe-title"><a href="../Receitas/pudim.html">Pudim de Leite</a></h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 90 min</span>
+                            <span><i class="fas fa-utensils"></i> 8 porções</span>
+                        </div>
+                        <p>Pudim cremoso com calda de caramelo, receita tradicional.</p>
+                        <div class="recipe-categories">
+                            <span class="category-tag">Doces</span>
+                            <span class="category-tag">Sobremesas</span>
+                        </div>
+                        <div class="recipe-author">
+                            <img src="#" alt="Chef Antônio" class="author-avatar">
+                            <span>Chef Antônio</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mousse Vegano -->
+                <div class="recipe-card">
+                    <a href="../Receitas/MousseChocolateVegano.html">
+                        <img src="../assets/mousse-vegano.jpg" alt="Mousse de Chocolate Vegano" class="recipe-img">
+                    </a>
+                    <div class="recipe-info">
+                        <h3 class="recipe-title"><a href="../Receitas/MousseChocolateVegano.html">Mousse de Chocolate Vegano</a></h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 15 min (+4h gelar)</span>
+                            <span><i class="fas fa-utensils"></i> 4 porções</span>
+                        </div>
+                        <p>Mousse cremosa feita com chocolate e aquafaba.</p>
+                        <div class="recipe-categories">
+                            <span class="category-tag">Doces</span>
+                            <span class="category-tag">Vegetariano</span>
+                        </div>
+                        <div class="recipe-author">
+                            <img src="../assets/chef-vegano.jpg" alt="Chef Green" class="author-avatar">
+                            <span>Chef Green</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="all-recipes">
+            <h2 class="section-title">Todos os Doces</h2>
+            <div class="recipes-grid">
+                <!-- Torta de Limão -->
+                <div class="recipe-card">
+                    <a href="../Receitas/TortaLimao.html">
+                        <img src="../assets/torta-limao.jpg" alt="Torta de Limão" class="recipe-img">
+                    </a>
+                    <div class="recipe-info">
+                        <h3 class="recipe-title"><a href="../Receitas/TortaLimao.html">Torta de Limão</a></h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 1h 20min</span>
+                            <span><i class="fas fa-utensils"></i> 8 porções</span>
+                        </div>
+                        <p>Torta com base de biscoito, creme de limão e merengue.</p>
+                        <div class="recipe-categories">
+                            <span class="category-tag">Doces</span>
+                            <span class="category-tag">Sobremesas</span>
+                        </div>
+                        <div class="recipe-author">
+                            <img src="../assets/chef-doceira.jpg" alt="Chef Dulce" class="author-avatar">
+                            <span>Chef Dulce</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Brownie Vegano -->
+                <div class="recipe-card">
+                    <a href="../Receitas/BrownieVegano.html">
+                        <img src="../assets/brownie-vegano.jpg" alt="Brownie Vegano" class="recipe-img">
+                    </a>
+                    <div class="recipe-info">
+                        <h3 class="recipe-title"><a href="../Receitas/BrownieVegano.html">Brownie Vegano</a></h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 40 min</span>
+                            <span><i class="fas fa-utensils"></i> 9 porções</span>
+                        </div>
+                        <p>Brownie úmido feito com cacau em pó e óleo de coco.</p>
+                        <div class="recipe-categories">
+                            <span class="category-tag">Doces</span>
+                            <span class="category-tag">Vegetariano</span>
+                        </div>
+                        <div class="recipe-author">
+                            <img src="../assets/chef-plantbased.jpg" alt="Chef Plant" class="author-avatar">
+                            <span>Chef Plant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>Empresa</h3>
+                <ul>
+                    <li><a href="../sobre/sobre.html">Sobre</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Imprensa</a></li>
+                    <li><a href="../contato/contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Suporte</h3>
+                <ul>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Plataforma de Desenvolvedor</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Siga</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Código De Sabores, Inc. Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="#">Privacidade</a>
+                <a href="#">Termos</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleReceitas.css">
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="Receitas.js"></script>
+
+    <title>Massas | Código de Sabores</title>
+
+    <style>
+        :root{
+        /* Tema Claro */
+        --bg-color: #FEF9E1;
+        --text-color: #000000;
+        --primary-color: #FF9D23;
+        --secondary-color: #C14600;
+        --accent-color: #FF9D23;
+        --card-bg: #E5D0AC;
+        --header-border: #FF9D23;
+        --footer-bg: #C14600;
+        --footer-text: #FEF9E1;
+        --footer-link: #FF9D23;
+        --shadow-color: rgba(255, 157, 35, 0.1);
+        --testimonial-bg: #FFF5E8;
+        --hero-bg: #FEF9E1;
+        --button-bg: #FF9D23;
+        --button-text: #FFFFFF;
+    
+        /* Carrossel */
+        --carousel-control-bg: rgba(255, 255, 255, 0.7);
+        --carousel-indicator: rgba(255, 157, 35, 0.5);
+        --carousel-indicator-active: #FF9D23;
+    }
+    
+    .dark-mode {
+        /* Tema Escuro com nova paleta */
+        --bg-color: #000000;
+        --text-color: #ffffff;
+        --primary-color: #FF9D23;
+        --secondary-color: #C14600;
+        --accent-color: #ef9610;
+        --card-bg: #2C2D34;
+        --header-border: #F2910A;
+        --footer-bg: #000000;
+        --footer-text: #EFD510;
+        --footer-link: #F2910A;
+        --shadow-color: rgba(0, 0, 0, 0.4);
+    
+        --testimonial-bg: #2C2D34;
+        --hero-bg: #1a1717;
+        --button-bg: #bb2200;
+        --button-text: #ffffff;
+        --hover-color: #F2910A;
+    
+        /* Carrossel */
+        --carousel-control-bg: rgba(0, 0, 0, 0.6);
+        --carousel-indicator: rgba(242, 145, 10, 0.5);
+        --carousel-indicator-active: #F2910A;
+    }
+    
+        </style>
+</head>
+<body class="light-mode">
+    <header>
+        <h1 class="logo">Código de Sabores</h1>
+        <nav class="nav-links">
+            <div class="categories-dropdown">
+                <a href="../PaginaDasReceitas/Receitas.html" class="active">Receitas <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="../Categorias/animes.html">Anime</a>
+                    <a href="../Categorias/aves.html">Aves</a>
+                    <a href="../Categorias/bovinos.html">Carnes Bovinas</a>
+                    <a href="../Categorias/suinos.html">Carnes Suínas</a>
+                    <a href="../Categorias/sobremesa.html">Doces</a>
+                    <a href="../Categorias/massa.html">Massas</a>
+                    <a href="../Categorias/peixe.html">Peixes</a>
+                    <a href="../Categorias/vegetariano.html">Vegetarianas</a>
+                    <a href="../PaginaDasReceitas/Receitas.html">Todas</a>
+                </div>
+            </div>
+            <a href="../sobre/sobre.html">Sobre Nós</a>
+            <a href="../contato/contato.html">Fale Conosco</a>
+        </nav>
+        <div class="header-right">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+            <div class="header-buttons">
+                <a href="../loginSenha/login.html" class="get-started-btn">Entrar</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="recipes-header">
+        <h1>Receitas de Massas</h1>
+        <p>Deliciosas opções de massas para todos os gostos</p>
+    </section>
+
+    <div class="recipes-container">
+        <div class="recipes-filters">
+            <button class="filter-btn">Anime</button>
+            <button class="filter-btn">Aves</button>
+            <button class="filter-btn">Carnes Bovinas</button>
+            <button class="filter-btn">Carnes Suínas</button>
+            <button class="filter-btn">Doces</button>
+            <button class="filter-btn active">Massas</button>
+            <button class="filter-btn">Peixes</button>
+            <button class="filter-btn">Vegetarianas</button>
+            <button class="filter-btn">Todas</button>
+        </div>
+        
+        <div class="featured-recipes">
+            <h2 class="section-title">Massas em Destaque</h2>
+            <div class="recipes-grid">
+                <!-- Espaguete Alho e Óleo -->
+                <div class="recipe-card">
+                    <a href="../Receitas/MacarraoAlhoOleo.html">
+                        <img src="../assets/MacarraoAlhoOleo.jpg" alt="Espaguete Alho e Óleo" class="recipe-img">
+                    </a>
+                    <div class="recipe-info">
+                        <h3 class="recipe-title"><a href="../Receitas/MacarraoAlhoOleo.html">Espaguete Alho e Óleo</a></h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 25 min</span>
+                            <span><i class="fas fa-utensils"></i> 4 porções</span>
+                        </div>
+                        <p>Clássico italiano com um toque de chef.</p>
+                        <div class="recipe-categories">
+                            <span class="category-tag">Massas</span>
+                            <span class="category-tag">Italiana</span>
+                        </div>
+                        <div class="recipe-author">
+                            <img src="../assets/chef1.jpg" alt="Chef Maria" class="author-avatar">
+                            <span>Chef Maria</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Massa de Pizza -->
+                <div class="recipe-card">
+                    <a href="../Receitas/MassaPizza.html">
+                        <img src="../assets/massaPizza.jpeg" alt="Massa de Pizza" class="recipe-img">
+                    </a>
+                    <div class="recipe-info">
+                        <h3 class="recipe-title"><a href="../Receitas/MassaPizza.html">Massa de Pizza</a></h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 2h (inclui crescer)</span>
+                            <span><i class="fas fa-utensils"></i> 2 pizzas grandes</span>
+                        </div>
+                        <p>Massa de pizza caseira crocante por fora e macia por dentro.</p>
+                        <div class="recipe-categories">
+                            <span class="category-tag">Massas</span>
+                            <span class="category-tag">Italiana</span>
+                        </div>
+                        <div class="recipe-author">
+                            <img src="../assets/chef-italiano.jpg" alt="Chef Marco" class="author-avatar">
+                            <span>Chef Marco</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Lasanha -->
+                <div class="recipe-card">
+                    <a href="../Receitas/LasanhaBolonhesa.html">
+                        <img src="../assets/lasanha.jpg" alt="Lasanha de Carne Moída" class="recipe-img">
+                    </a>
+                    <div class="recipe-info">
+                        <h3 class="recipe-title"><a href="../Receitas/LasanhaBolonhesa.html">Lasanha de Carne Moída</a></h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 1h 30min</span>
+                            <span><i class="fas fa-utensils"></i> 8 porções</span>
+                        </div>
+                        <p>Lasanha tradicional com camadas de massa, queijo e carne moída.</p>
+                        <div class="recipe-categories">
+                            <span class="category-tag">Massas</span>
+                            <span class="category-tag">Italiana</span>
+                        </div>
+                        <div class="recipe-author">
+                            <img src="../assets/chef-italiana.jpg" alt="Chef Sofia" class="author-avatar">
+                            <span>Chef Sofia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="all-recipes">
+            <h2 class="section-title">Todas as Massas</h2>
+            <div class="recipes-grid">
+                <!-- Rondelli -->
+                <div class="recipe-card">
+                    <a href="../Receitas/Rondelli.html">
+                        <img src="../assets/rondelli.jpeg" alt="Rondelli de Presunto e Queijo" class="recipe-img">
+                    </a>
+                    <div class="recipe-info">
+                        <h3 class="recipe-title"><a href="../Receitas/Rondelli.html">Rondelli de Presunto e Queijo</a></h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 1h</span>
+                            <span><i class="fas fa-utensils"></i> 4 porções</span>
+                        </div>
+                        <p>Massa recheada com presunto e queijo ao molho branco.</p>
+                        <div class="recipe-categories">
+                            <span class="category-tag">Massas</span>
+                            <span class="category-tag">Italiana</span>
+                        </div>
+                        <div class="recipe-author">
+                            <img src="../assets/chef-massas.jpg" alt="Chef Giovanni" class="author-avatar">
+                            <span>Chef Giovanni</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ravioli de Queijo -->
+                <div class="recipe-card">
+                    <a href="../Receitas/RavioliQueijo.html">
+                        <img src="../assets/ravioli.jpg" alt="Ravioli de Queijo" class="recipe-img">
+                    </a>
+                    <div class="recipe-info">
+                        <h3 class="recipe-title"><a href="../Receitas/RavioliQueijo.html">Ravioli de Queijo</a></h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 1h 15min</span>
+                            <span><i class="fas fa-utensils"></i> 4 porções</span>
+                        </div>
+                        <p>Massa caseira recheada com ricota e queijos especiais.</p>
+                        <div class="recipe-categories">
+                            <span class="category-tag">Massas</span>
+                            <span class="category-tag">Italiana</span>
+                        </div>
+                        <div class="recipe-author">
+                            <img src="../assets/chef-pasta.jpg" alt="Chef Luigi" class="author-avatar">
+                            <span>Chef Luigi</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Nhoque de Batata Doce -->
+                <div class="recipe-card">
+                    <a href="../Receitas/NhoqueBatataDoce.html">
+                        <img src="../assets/nhoque-batata-doce.jpg" alt="Nhoque de Batata Doce" class="recipe-img">
+                    </a>
+                    <div class="recipe-info">
+                        <h3 class="recipe-title"><a href="../Receitas/NhoqueBatataDoce.html">Nhoque de Batata Doce</a></h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 1h</span>
+                            <span><i class="fas fa-utensils"></i> 4 porções</span>
+                        </div>
+                        <p>Nhoque saudável feito com batata doce e molho de tomate fresco.</p>
+                        <div class="recipe-categories">
+                            <span class="category-tag">Massas</span>
+                            <span class="category-tag">Vegetariano</span>
+                        </div>
+                        <div class="recipe-author">
+                            <img src="../assets/chef-saudavel.jpg" alt="Chef Light" class="author-avatar">
+                            <span>Chef Light</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Rodapé igual ao da página de doces -->
+    </footer>
+    <script src="../Receitas.js"></script>
+</body>
+</html>

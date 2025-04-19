@@ -4,41 +4,41 @@
     --main-font: 'Source Sans 3', sans-serif;
 }
 :root {
-    /* Tema Claro */
-    /* #FF9D23 #FEF9E1 #C14600 #E5D0AC #ffffff */
+    /* Tema Claro  */
     --bg-color: #FEF9E1;      
-    --text-color: #C14600;      
-    --primary-color: #C14600;
-    --secondary-color: #ffffff; 
-    --accent-color: #E5D0AC;  
-    --card-bg: #FEF9E1;         
+    --text-color: #813102;       
+    --primary-color: #C14600;   
+    --secondary-color: #FF9D23;  
+    --accent-color: #E5D0AC;    
+    --card-bg: #FEF9E1;    
     --header-bg: #FEF9E1;    
-    --header-border: #FF9D23;
-    --footer-bg: #C14600;    
-    --footer-text: #FEF9E1;
-    --button-bg: #C14600;     
-    --button-text: #FEF9E1; 
-    --hover-color: #FF9D23;     
+    --header-border: #FF9D23;    
+    --footer-bg: #C14600;        
+    --footer-text: #FEF9E1;      
+    --button-bg: #C14600;        
+    --button-text: #FEF9E1;    
+    --hover-color: #FF9D23;      
     --shadow-color: rgba(193, 70, 0, 0.1); 
 }
 
 
+
 .dark-mode {
-    /* Tema Escuro */
-    /* #F2910A #2C2D34 #bb2200 #EFD510 #000000 #ef9610 #1a1717 #FF9D23 #ffffff */
-    --bg-color: #000000;         
-    --text-color: #ffffff;        
-    --primary-color: #FF9D23;    
-    --secondary-color: #1a1717;  
-    --accent-color: #ef9610;     
-    --card-bg: #000000;          
-    --header-border: #F2910A; 
-    --footer-bg: #000000;    
-    --footer-text: #EFD510;     
-    --button-bg: #bb2200;         
-    --button-text: #2C2D34;     
-    --hover-color: #F2910A;      
-    --shadow-color: rgba(0, 0, 0, 0.5);  
+    /* Tema Escuro   */
+    --bg-color: #000000;          
+    --text-color: #FFFFFF;        
+    --primary-color: #F2910A;    
+    --secondary-color: #bb2200;  
+    --accent-color: #EFD510;      
+    --card-bg: #1a1717;           
+    --header-bg: #000000;         
+    --header-border: #ef9610;    
+    --footer-bg: #000000;        
+    --footer-text: #FFFFFF;      
+    --button-bg: #F2910A;      
+    --button-text: #000000;  
+    --hover-color: #bb2200;     
+    --shadow-color: rgba(0, 0, 0, 0.4); 
 }
 
 
@@ -320,8 +320,8 @@ header {
 }
 
 .template-card a{
-    color: var(--primary-color);
     text-decoration: none !important;
+    color: #eeeeee;
 }
 
 
@@ -398,7 +398,7 @@ header {
 .about-card h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: var(--primary-color);
+    color: #a5a5a5;
 }
 
 .about-card p, .about-card ul {
@@ -462,7 +462,6 @@ header {
     background-color: var(--testimonial-bg);
     border-radius: 8px;
     box-shadow: 0 5px 15px var(--shadow-color);
-    background-color: var(--secondary-color);
     transition: transform 0.3s ease;
 }
 
@@ -505,8 +504,8 @@ header {
 }
 
 footer {
-    background-color: var(--footer-bg);
-    color: var(--footer-text);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
     padding: 60px 40px 30px;
     transition: background-color 0.3s ease;
 }
@@ -541,7 +540,7 @@ footer {
 }
 
 .footer-column a:hover {
-    color: var(--footer-text);
+    color: var(--primary-color);
 }
 
 .footer-bottom {
@@ -553,6 +552,14 @@ footer {
     align-items: center;
     font-size: 12px;
     color: var(--footer-link);
+}
+
+.social-icons a{
+    color: var(--secondary-color);
+}
+
+.social-icons :hover{
+    color: var(--accent-color);
 }
 
 
@@ -723,5 +730,161 @@ footer {
     .indicator {
         width: 8px;
         height: 8px;
+    }
+}
+
+ /* Estilos específicos para a página de receita */
+ .recipe-hero {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.recipe-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.recipe-hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recipe-hero h1,
+.recipe-hero p {
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.recipe-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.receita-imagem {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.ingredients-list, .instructions-list {
+    background-color: var(--background-secondary);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.ingredients-list li, .instructions-list li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.receita-imagem{
+    width:100%;
+    border-radius:8px; 
+    margin:20px 0;
+    border-radius: 8px;
+}
+ .recipe-hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.recipe-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+}
+
+.recipe-content {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.recipe-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.recipe-info-card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.recipe-info-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.recipe-info-card a {
+    text-decoration: none;
+    color: var(--primary-color-color);
+}
+.recipe-info-card-links :hover{
+    color: var(--secondary-color);
+}
+
+.redes{
+    display: flex; 
+    gap: 20px;
+}
+
+.redes :hover{
+    color: var(--hover-color);
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-item i {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.ingredients-list, .instructions-list {
+    margin-left: 20px;
+}
+
+.ingredients-list li, .instructions-list li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .recipe-container {
+        grid-template-columns: 1fr;
     }
 }

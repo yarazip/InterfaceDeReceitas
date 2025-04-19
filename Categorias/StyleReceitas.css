@@ -1,58 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
 :root {
     /* Fontes */
     --logo-font: 'Rock Salt', 'sans serif';
     --main-font: 'Source Sans 3', sans-serif;
 
-    /* Tema Claro */
-    --bg-color: #FEF9E1;     
-    --text-color: #343131;   
-    --primary-color: #C14600;  
-    --secondary-color: #FF9D23;
-    --accent-color: #E5D0AC; 
-    --card-bg: #FFFFFF;     
-    --header-border: #FF9D23;   
-    --footer-bg: #343131;    
-    --footer-text: #FEF9E1;  
-    --footer-link: #FF9D23;  
-    --shadow-color: rgba(195, 70, 0, 0.1);
-    --testimonial-bg: #E5D0AC;  
-    --hero-bg: #FEF9E1;   
-    --button-bg: #C14600;      
-    --button-text: #FEF9E1;     
-    
-    /* Carrossel */
-    --carousel-control-bg: rgba(255, 255, 255, 0.7);
-    --carousel-indicator: rgba(255, 157, 35, 0.5);
-    --carousel-indicator-active: #C14600;
 }
-
-.dark-mode {
-    /* Tema Escuro */
-    --bg-color: #343131;        
-    --text-color: #E5D0AC;  
-    --primary-color: #D8A25E;   
-    --secondary-color: #ff5500; 
-    --accent-color: #EEDF7A;    
-    --card-bg: #434040;    
-    --header-border: #D8A25E;  
-    --footer-bg: #1A1A1A;   
-    --footer-text: #E5D0AC; 
-    --footer-link: #D8A25E; 
-    --shadow-color: rgba(0, 0, 0, 0.3); 
-   
-    --testimonial-bg: #434040;  /* Fundo de depoimentos */
-    --hero-bg: #343131;         /* Fundo do herói */
-    --button-bg: #D8A25E;       /* Fundo de botões */
-    --button-text: #343131;     /* Texto de botões */
-    --hover-color: #A04747;     /* Cor de hover */
-    
-    /* Carrossel */
-    --carousel-control-bg: rgba(52, 49, 49, 0.7);
-    --carousel-indicator: rgba(216, 162, 94, 0.5);
-    --carousel-indicator-active: #EEDF7A;
-}
-
 /* Mantenha todo o restante do seu CSS existente abaixo */
 body {
 }
@@ -523,7 +477,7 @@ header {
 }
 
 footer {
-    background-color: var(--footer-bg);
+    background-color: --secondary-color;
     color: var(--footer-text);
     padding: 60px 40px 30px;
     transition: background-color 0.3s ease;
@@ -538,7 +492,7 @@ footer {
 }
 
 .footer-column h3 {
-    font-size: 16px;
+    font-size: 17px;
     margin-bottom: 20px;
     font-weight: 600;
     color: var(--footer-text);
@@ -554,7 +508,7 @@ footer {
 
 .footer-column a {
     color: var(--footer-link);
-    font-size: 14px;
+    font-size: 15px;
     transition: color 0.3s ease;
 }
 
@@ -573,6 +527,9 @@ footer {
     color: var(--footer-link);
 }
 
+.footer-bottom a{
+    color: var(--primary-color-color);
+}
 
 @media (max-width: 768px) {
     header {
@@ -843,6 +800,12 @@ footer {
     font-size: 1.2rem;
     margin-bottom: 10px;
     color: var(--text-color);
+}
+
+.recipe-title a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    
 }
 
 .recipe-meta {

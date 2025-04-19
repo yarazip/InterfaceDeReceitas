@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleReceitas.css">
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Receitas de Aves | Código de Sabores</title>
+    <script src="Receitas.js"></script>
+    <style>
+        :root{
+        /* Tema Claro */
+        --bg-color: #FEF9E1;
+        --text-color: #000000;
+        --primary-color: #FF9D23;
+        --secondary-color: #C14600;
+        --accent-color: #FF9D23;
+        --card-bg: #E5D0AC;
+        --header-border: #FF9D23;
+        --footer-bg: #C14600;
+        --footer-text: #FEF9E1;
+        --footer-link: #FF9D23;
+        --shadow-color: rgba(255, 157, 35, 0.1);
+        --testimonial-bg: #FFF5E8;
+        --hero-bg: #FEF9E1;
+        --button-bg: #FF9D23;
+        --button-text: #FFFFFF;
+    
+        /* Carrossel */
+        --carousel-control-bg: rgba(255, 255, 255, 0.7);
+        --carousel-indicator: rgba(255, 157, 35, 0.5);
+        --carousel-indicator-active: #FF9D23;
+    }
+    
+    .dark-mode {
+        /* Tema Escuro com nova paleta */
+        --bg-color: #000000;
+        --text-color: #ffffff;
+        --primary-color: #FF9D23;
+        --secondary-color: #C14600;
+        --accent-color: #ef9610;
+        --card-bg: #2C2D34;
+        --header-border: #F2910A;
+        --footer-bg: #000000;
+        --footer-text: #EFD510;
+        --footer-link: #F2910A;
+        --shadow-color: rgba(0, 0, 0, 0.4);
+    
+        --testimonial-bg: #2C2D34;
+        --hero-bg: #1a1717;
+        --button-bg: #bb2200;
+        --button-text: #ffffff;
+        --hover-color: #F2910A;
+    
+        /* Carrossel */
+        --carousel-control-bg: rgba(0, 0, 0, 0.6);
+        --carousel-indicator: rgba(242, 145, 10, 0.5);
+        --carousel-indicator-active: #F2910A;
+    }
+    
+        </style>
+</head>
+<body class="light-mode">
+    <header>
+        <h1 class="logo">Código de Sabores</h1>
+        <nav class="nav-links">
+            <div class="categories-dropdown">
+                <a href="../PaginaDasReceitas/Receitas.html">Receitas <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="../Categorias/animes.html">Anime</a>
+                    <a href="../Categorias/aves.html" class="active">Aves</a>
+                    <a href="../Categorias/bovinos.html">Carnes Bovinas</a>
+                    <a href="../Categorias/suinos.html">Carnes Suínas</a>
+                    <a href="../Categorias/sobremesa.html">Doces</a>
+                    <a href="../Categorias/massa.html">Massas</a>
+                    <a href="../Categorias/peixe.html">Peixes</a>
+                    <a href="../Categorias/vegetariano.html">Vegetarianas</a>
+                    <a href="../PaginaDasReceitas/Receitas.html">Todas</a>
+                </div>
+            </div>
+            <a href="../sobre/sobre.html">Sobre Nós</a>
+            <a href="../contato/contato.html">Fale Conosco</a>
+        </nav>
+        <div class="header-right">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+            <div class="header-buttons">
+                <a href="../loginSenha/login.html" class="get-started-btn">Entrar</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="recipes-header">
+        <h1>Receitas com Aves</h1>
+        <p>Deliciosas receitas com frango, peru e outras aves</p>
+    </section>
+
+    <div class="recipes-container">
+        <div class="featured-recipes">
+            <div class="recipes-grid">
+                <!-- Receita 5 - Parmegiana de Frango -->
+                <div class="recipe-card">
+                    <a href="../Receitas/ParmegianaDeFrango.html">
+                        <img src="../assets/Parmegiana.jpg" alt="Parmegiana de frango" class="recipe-img">
+                    </a>
+                    <div class="recipe-info">
+                        <h3 class="recipe-title"><a href="../Receitas/ParmegianaDeFrango.html">Parmegiana de Frango</a></h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 30 min</span>
+                            <span><i class="fas fa-utensils"></i> 6 porções</span>
+                        </div>
+                        <p>Clássica parmegiana de frango e molho cremoso.</p>
+                        <div class="recipe-categories">
+                            <span class="category-tag">Aves</span>
+                            <span class="category-tag">Caseiro</span>
+                        </div>
+                        <div class="recipe-author">
+                            <img src="../assets/chef5.jpg" alt="Chef Sofia" class="author-avatar">
+                            <span>Chef Sofia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Receita 12 - Peru Assado -->
+                <div class="recipe-card">
+                    <a href="../Receitas/Peru.html">
+                        <img src="../assets/peru.jpeg" alt="Peru Assado" class="recipe-img">
+                    </a>
+                    <div class="recipe-info">
+                        <h3 class="recipe-title"><a href="../Receitas/Peru.html">Peru Assado</a></h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 4h</span>
+                            <span><i class="fas fa-utensils"></i> 10 porções</span>
+                        </div>
+                        <p>Peru natalino assado com recheio e molho especial.</p>
+                        <div class="recipe-categories">
+                            <span class="category-tag">Aves</span>
+                            <span class="category-tag">Festivo</span>
+                        </div>
+                        <div class="recipe-author">
+                            <img src="../assets/chef-natal.jpg" alt="Chef Noel" class="author-avatar">
+                            <span>Chef Noel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Receita 6 - Chester Assado -->
+                <div class="recipe-card">
+                    <a href="../Receitas/Chester.html">
+                        <img src="../assets/chester.jpeg" alt="Chester Assado" class="recipe-img">
+                    </a>
+                    <div class="recipe-info">
+                        <h3 class="recipe-title"><a href="../Receitas/Chester.html">Chester Assado</a></h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 3h 30min</span>
+                            <span><i class="fas fa-utensils"></i> 8 porções</span>
+                        </div>
+                        <p>Chester temperado e assado com ervas finas.</p>
+                        <div class="recipe-categories">
+                            <span class="category-tag">Aves</span>
+                            <span class="category-tag">Festivo</span>
+                        </div>
+                        <div class="recipe-author">
+                            <img src="../assets/chef-aves.jpg" alt="Chef Felipe" class="author-avatar">
+                            <span>Chef Felipe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Receita 15 - Medalhão de Frango -->
+                <div class="recipe-card">
+                    <a href="../Receitas/MedalhaoFrango.html">
+                        <img src="../assets/medalhao.jpeg" alt="Medalhão de Frango com Bacon" class="recipe-img">
+                    </a>
+                    <div class="recipe-info">
+                        <h3 class="recipe-title"><a href="../Receitas/MedalhaoFrango.html">Medalhão de Frango com Bacon</a></h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 45 min</span>
+                            <span><i class="fas fa-utensils"></i> 4 porções</span>
+                        </div>
+                        <p>Medalhões suculentos envoltos em bacon crocante.</p>
+                        <div class="recipe-categories">
+                            <span class="category-tag">Aves</span>
+                            <span class="category-tag">Gourmet</span>
+                        </div>
+                        <div class="recipe-author">
+                            <img src="../assets/chef-gourmet.jpg" alt="Chef Renata" class="author-avatar">
+                            <span>Chef Renata</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>Empresa</h3>
+                <ul>
+                    <li><a href="../sobre/sobre.html">Sobre</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Imprensa</a></li>
+                    <li><a href="../contato/contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Suporte</h3>
+                <ul>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Plataforma de Desenvolvedor</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Siga</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Código De Sabores, Inc. Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="#">Privacidade</a>
+                <a href="#">Termos</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

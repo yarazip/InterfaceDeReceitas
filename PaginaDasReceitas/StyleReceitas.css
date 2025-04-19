@@ -1,47 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
-:root{
+
+
+:root {
+    /* Fontes */
     --logo-font: 'Rock Salt', 'sans serif';
     --main-font: 'Source Sans 3', sans-serif;
-}
-:root {
-    /* Tema Claro */
-    /* #FF9D23 #FEF9E1 #C14600 #E5D0AC #ffffff */
-    --bg-color: #FEF9E1;      
-    --text-color: #C14600;      
-    --primary-color: #C14600;
-    --secondary-color: #ffffff; 
-    --accent-color: #E5D0AC;  
-    --card-bg: #FEF9E1;         
-    --header-bg: #FEF9E1;    
-    --header-border: #FF9D23;
-    --footer-bg: #C14600;    
-    --footer-text: #FEF9E1;
-    --button-bg: #C14600;     
-    --button-text: #FEF9E1; 
-    --hover-color: #FF9D23;     
-    --shadow-color: rgba(193, 70, 0, 0.1); 
-}
 
+    /* Tema Claro */
+    --bg-color: #FEF9E1;
+    --text-color: #000000;
+    --primary-color: #FF9D23;
+    --secondary-color: #C14600;
+    --accent-color: #FF9D23;
+    --card-bg: #E5D0AC;
+    --header-border: #FF9D23;
+    --footer-bg: #C14600;
+    --footer-text: #FEF9E1;
+    --footer-link: #FF9D23;
+    --shadow-color: rgba(255, 157, 35, 0.1);
+    --testimonial-bg: #FFF5E8;
+    --hero-bg: #FEF9E1;
+    --button-bg: #FF9D23;
+    --button-text: #FFFFFF;
+
+    /* Carrossel */
+    --carousel-control-bg: rgba(255, 255, 255, 0.7);
+    --carousel-indicator: rgba(255, 157, 35, 0.5);
+    --carousel-indicator-active: #FF9D23;
+}
 
 .dark-mode {
-    /* Tema Escuro */
-    /* #F2910A #2C2D34 #bb2200 #EFD510 #000000 #ef9610 #1a1717 #FF9D23 #ffffff */
-    --bg-color: #000000;         
-    --text-color: #ffffff;        
-    --primary-color: #FF9D23;    
-    --secondary-color: #1a1717;  
-    --accent-color: #ef9610;     
-    --card-bg: #000000;          
-    --header-border: #F2910A; 
-    --footer-bg: #000000;    
-    --footer-text: #EFD510;     
-    --button-bg: #bb2200;         
-    --button-text: #2C2D34;     
-    --hover-color: #F2910A;      
-    --shadow-color: rgba(0, 0, 0, 0.5);  
+    /* Tema Escuro com nova paleta */
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --primary-color: #FF9D23;
+    --secondary-color: #C14600;
+    --accent-color: #ef9610;
+    --card-bg: #2C2D34;
+    --header-border: #F2910A;
+    --footer-bg: #000000;
+    --footer-text: #EFD510;
+    --footer-link: #F2910A;
+    --shadow-color: rgba(0, 0, 0, 0.4);
+
+    --testimonial-bg: #2C2D34;
+    --hero-bg: #1a1717;
+    --button-bg: #bb2200;
+    --button-text: #ffffff;
+    --hover-color: #F2910A;
+
+    /* Carrossel */
+    --carousel-control-bg: rgba(0, 0, 0, 0.6);
+    --carousel-indicator: rgba(242, 145, 10, 0.5);
+    --carousel-indicator-active: #F2910A;
+}
+
+/* Mantenha todo o restante do seu CSS existente abaixo */
+body {
 }
 
 
+/* ... (todo o restante do seu CSS permanece igual) ... */
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -61,6 +80,8 @@ header {
     background-color: var(--bg-color);
     z-index: 100;
     transition: background-color 0.3s ease, border-color 0.3s ease;
+    background-color: var(--bg-color);
+    border-bottom-color: var(--header-border);
 }
 
 .logo {
@@ -320,8 +341,8 @@ header {
 }
 
 .template-card a{
-    color: var(--primary-color);
     text-decoration: none !important;
+    color: #eeeeee;
 }
 
 
@@ -398,7 +419,7 @@ header {
 .about-card h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: var(--primary-color);
+    color: #a5a5a5;
 }
 
 .about-card p, .about-card ul {
@@ -462,7 +483,6 @@ header {
     background-color: var(--testimonial-bg);
     border-radius: 8px;
     box-shadow: 0 5px 15px var(--shadow-color);
-    background-color: var(--secondary-color);
     transition: transform 0.3s ease;
 }
 
@@ -505,7 +525,7 @@ header {
 }
 
 footer {
-    background-color: var(--footer-bg);
+    background-color: #863404;
     color: var(--footer-text);
     padding: 60px 40px 30px;
     transition: background-color 0.3s ease;
@@ -520,7 +540,7 @@ footer {
 }
 
 .footer-column h3 {
-    font-size: 16px;
+    font-size: 17px;
     margin-bottom: 20px;
     font-weight: 600;
     color: var(--footer-text);
@@ -536,7 +556,7 @@ footer {
 
 .footer-column a {
     color: var(--footer-link);
-    font-size: 14px;
+    font-size: 15px;
     transition: color 0.3s ease;
 }
 
@@ -555,6 +575,9 @@ footer {
     color: var(--footer-link);
 }
 
+.footer-bottom a{
+    color: var(--primary-color-color);
+}
 
 @media (max-width: 768px) {
     header {
@@ -723,5 +746,233 @@ footer {
     .indicator {
         width: 8px;
         height: 8px;
+    }
+}
+
+/* PAGINA DE RECEITAS */
+  /* Estilos específicos para o feed de receitas */
+  .recipes-header {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/banner-receitas.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.recipes-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+}
+
+.recipes-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    background: var(--card-bg);
+    border: 1px solid var(--primary-color);  /* Usando primary-color para a borda */
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--text-color);  /* Cor do texto adaptável */
+    font-weight: 500;
+}
+
+.filter-btn:hover {
+    background: var(--primary-color);
+    color: var(--bg-color);  /* Texto fica na cor do fundo principal */
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.filter-btn.active {
+    background: var(--primary-color);
+    color: var(--bg-color);
+    border-color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Melhorias específicas para cada tema */
+:root .filter-btn {
+    /* Estilo específico para tema claro */
+    box-shadow: 0 2px 4px rgba(195, 70, 0, 0.1);
+}
+
+.dark-mode .filter-btn {
+    /* Estilo específico para tema escuro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.filter-btn:hover, .filter-btn.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.recipe-card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px var(--shadow-color);
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-info {
+    padding: 20px;
+}
+
+.recipe-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.recipe-title a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    
+}
+
+.recipe-meta {
+    display: flex;
+    justify-content: space-between;
+    color: var(--medium-grey);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.recipe-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.author-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.recipe-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.category-tag {
+    background: var(--secondary-color);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+}
+
+.featured-recipes {
+    margin: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section-title:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 15px auto 0;
+}
+
+/* Estilos para o novo menu compacto */
+header {
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    position: relative;
+}
+
+.nav-links a {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+}
+
+/* Estilos para o dropdown de categorias */
+.categories-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.categories-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--card-bg);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+    padding: 10px 0;
+}
+
+.dropdown-content a {
+    color: var(--text-color);
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .recipes-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+    
+    .recipes-header {
+        padding: 60px 20px;
+    }
+    
+    .nav-links {
+        display: none;
     }
 }
