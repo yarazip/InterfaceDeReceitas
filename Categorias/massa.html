@@ -3,65 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="StyleReceitas.css">
+    <link rel="stylesheet" href="../Styles/StyleReceitasCate.css">
+    <link rel="stylesheet" href="../Styles/styleMassa.css">
     <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="Receitas.js"></script>
+    <script src="../js/Receitas.js"></script>
 
     <title>Massas | Código de Sabores</title>
 
-    <style>
-        :root{
-        /* Tema Claro */
-        --bg-color: #FEF9E1;
-        --text-color: #000000;
-        --primary-color: #FF9D23;
-        --secondary-color: #C14600;
-        --accent-color: #FF9D23;
-        --card-bg: #E5D0AC;
-        --header-border: #FF9D23;
-        --footer-bg: #C14600;
-        --footer-text: #FEF9E1;
-        --footer-link: #FF9D23;
-        --shadow-color: rgba(255, 157, 35, 0.1);
-        --testimonial-bg: #FFF5E8;
-        --hero-bg: #FEF9E1;
-        --button-bg: #FF9D23;
-        --button-text: #FFFFFF;
-    
-        /* Carrossel */
-        --carousel-control-bg: rgba(255, 255, 255, 0.7);
-        --carousel-indicator: rgba(255, 157, 35, 0.5);
-        --carousel-indicator-active: #FF9D23;
-    }
-    
-    .dark-mode {
-        /* Tema Escuro com nova paleta */
-        --bg-color: #000000;
-        --text-color: #ffffff;
-        --primary-color: #FF9D23;
-        --secondary-color: #C14600;
-        --accent-color: #ef9610;
-        --card-bg: #2C2D34;
-        --header-border: #F2910A;
-        --footer-bg: #000000;
-        --footer-text: #EFD510;
-        --footer-link: #F2910A;
-        --shadow-color: rgba(0, 0, 0, 0.4);
-    
-        --testimonial-bg: #2C2D34;
-        --hero-bg: #1a1717;
-        --button-bg: #bb2200;
-        --button-text: #ffffff;
-        --hover-color: #F2910A;
-    
-        /* Carrossel */
-        --carousel-control-bg: rgba(0, 0, 0, 0.6);
-        --carousel-indicator: rgba(242, 145, 10, 0.5);
-        --carousel-indicator-active: #F2910A;
-    }
-    
-        </style>
 </head>
 <body class="light-mode">
     <header>
@@ -94,13 +43,17 @@
             </div>
         </div>
     </header>
-
-    <section class="recipes-header">
+    
+    
+    <section class="recipe-hero">
         <h1>Receitas de Massas</h1>
+        <img src="../assets/massasBackground.jpeg" alt="">
         <p>Deliciosas opções de massas para todos os gostos</p>
+        
     </section>
-
+    
     <div class="recipes-container">
+        <h2 class="section-title">Todas as Massas</h2>
         <div class="recipes-filters">
             <button class="filter-btn">Anime</button>
             <button class="filter-btn">Aves</button>
@@ -114,7 +67,6 @@
         </div>
         
         <div class="featured-recipes">
-            <h2 class="section-title">Massas em Destaque</h2>
             <div class="recipes-grid">
                 <!-- Espaguete Alho e Óleo -->
                 <div class="recipe-card">
@@ -188,7 +140,6 @@
         </div>
         
         <div class="all-recipes">
-            <h2 class="section-title">Todas as Massas</h2>
             <div class="recipes-grid">
                 <!-- Rondelli -->
                 <div class="recipe-card">
@@ -216,7 +167,7 @@
                 <!-- Ravioli de Queijo -->
                 <div class="recipe-card">
                     <a href="../Receitas/RavioliQueijo.html">
-                        <img src="../assets/ravioli.jpg" alt="Ravioli de Queijo" class="recipe-img">
+                        <img src="../assets/raviolli.jpg" alt="Ravioli de Queijo" class="recipe-img">
                     </a>
                     <div class="recipe-info">
                         <h3 class="recipe-title"><a href="../Receitas/RavioliQueijo.html">Ravioli de Queijo</a></h3>
@@ -239,7 +190,7 @@
                 <!-- Nhoque de Batata Doce -->
                 <div class="recipe-card">
                     <a href="../Receitas/NhoqueBatataDoce.html">
-                        <img src="../assets/nhoque-batata-doce.jpg" alt="Nhoque de Batata Doce" class="recipe-img">
+                        <img src="../assets/nhoque.jpeg" alt="Nhoque de Batata Doce" class="recipe-img">
                     </a>
                     <div class="recipe-info">
                         <h3 class="recipe-title"><a href="../Receitas/NhoqueBatataDoce.html">Nhoque de Batata Doce</a></h3>
@@ -263,8 +214,39 @@
     </div>
 
     <footer>
-        <!-- Rodapé igual ao da página de doces -->
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>Empresa</h3>
+                <ul>
+                    <li><a href="../sobre/sobre.html">Sobre</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Imprensa</a></li>
+                    <li><a href="../contato/contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Suporte</h3>
+                <ul>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Plataforma de Desenvolvedor</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Siga</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Código De Sabores, Inc. Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="#">Privacidade</a>
+                <a href="#">Termos</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
     </footer>
-    <script src="../Receitas.js"></script>
 </body>
 </html>

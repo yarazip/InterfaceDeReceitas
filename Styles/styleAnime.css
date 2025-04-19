@@ -1,0 +1,36 @@
+:root{
+    /* Tema Claro */
+    --bg-color: #FEF9E1;
+    --text-color: #000000;
+    --primary-color: #FF9D23;
+    --secondary-color: #C14600;
+    --accent-color: #FF9D23;
+    --card-bg: #E5D0AC;
+    --header-border: #FF9D23;
+    --footer-bg: #C14600;
+    --footer-text: #faedaa;
+    --footer-link: #ffe2be;
+    --shadow-color: rgba(255, 157, 35, 0.1);
+    --testimonial-bg: #FFF5E8;
+    --hero-bg: #FEF9E1;
+    --button-bg: #FF9D23;
+    --button-text: #FFFFFF;
+
+}
+
+.dark-mode {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --primary-color: #FF9D23;
+    --secondary-color: #dc7f05;
+    --accent-color: #ef9610;
+    --card-bg: #2C2D34;
+    --header-border: #F2910A;
+    --footer-bg: #121212;
+    --footer-text: #ef6510;
+    --footer-link: #fabf77;         
+    --button-bg: #bb2200;
+    --button-text: #2C2D34;
+    --hover-color: #F2910A;
+    --shadow-color: rgba(10, 10, 9, 0.05);  
+}

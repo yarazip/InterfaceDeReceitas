@@ -1,0 +1,40 @@
+:root{
+    /* Tema Claro */
+--bg-color: #daf0f3;           
+--text-color: #2D336B;         
+--primary-color: #7886C7;      
+--secondary-color: #d9dff7;    
+--accent-color: #A9B5DF;       
+--card-bg: #afc3cd;            
+--header-border: #7886C7;       
+--footer-bg: #8ba1ad;         
+--footer-text: #FFF2F2;       
+--footer-link: #0d0d36;        
+--shadow-color: rgba(45, 51, 107, 0.1); 
+--testimonial-bg: #FFF2F2;    
+--hero-bg: #FFF2F2;             
+--button-bg: #7886C7;        
+--button-text: #FFF2F2;        
+
+}
+
+.dark-mode {
+    /* Tema Escuro */
+
+--bg-color: #0e161e;            
+--text-color: #ECEFCA;         
+--primary-color: #94B4C1;       
+--secondary-color: #547792;    
+--accent-color: #94B4C1;        
+--card-bg: #1b2a3a;             
+--header-border: #547792;      
+--footer-bg: #1A2B3C;          
+--footer-text: #ECEFCA;        
+--footer-link: #94B4C1;         
+--shadow-color: rgba(10, 10, 9, 0.05);  
+--testimonial-bg: #213448;     
+--hero-bg: #213448;             
+--button-bg: #547792;          
+--button-text: #ECEFCA;         
+
+}

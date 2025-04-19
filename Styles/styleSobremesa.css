@@ -1,0 +1,39 @@
+:root {
+    /* Nova Paleta de Cores */
+    --bg-color: #F1E7E7;         /* Cor de fundo principal */
+    --text-color: #333333;       /* Cor do texto (escuro para melhor contraste) */
+    --primary-color: #E69DB8;    /* Cor primária - rosa mais forte */
+    --secondary-color: #FFD0C7;  /* Cor secundária - rosa claro */
+    --accent-color: #FFFECE;     /* Cor de destaque - amarelo claro */
+    --card-bg: #FFFFFF;          /* Fundo dos cards (branco para melhor legibilidade) */
+    --header-border: #E69DB8;    /* Borda do cabeçalho */
+    --footer-bg: #e69d9d;        /* Fundo do rodapé */
+    --footer-text: #FFFFFF;      /* Texto do rodapé */
+    --footer-link: #FFFECE;      /* Links do rodapé */
+    --shadow-color: rgba(230, 157, 184, 0.2); /* Sombra suave */
+    --testimonial-bg: #FFD0C7;   /* Fundo de seções de depoimentos */
+    --hero-bg: #F1E7E7;          /* Fundo da seção hero */
+    --button-bg: #E69DB8;        /* Fundo dos botões */
+    --button-text: #FFFFFF;      /* Texto dos botões */
+}
+
+    
+.dark-mode {
+    /* Tema Escuro com nova paleta */
+    --bg-color: #000000;         /* Fundo principal - roxo escuro */
+    --text-color: #FFD8D8;       /* Texto - rosa claro */
+    --primary-color: #E99B9B;    /* Cor primária - rosa suave */
+    --secondary-color: #856e7d;  /* Cor secundária - cinza azulado */
+    --accent-color: #E99B9B;     /* Cor de destaque - rosa suave */
+    --card-bg: #302939;          /* Fundo dos cards - roxo escuro */
+    --header-border: #50595C;    /* Borda do cabeçalho - cinza azulado */
+    --footer-bg: #170f14;        /* Fundo do rodapé - cinza azulado */
+    --footer-text: #FFD8D8;      /* Texto do rodapé - rosa claro */
+    --footer-link: #E99B9B;      /* Links do rodapé - rosa suave */
+    --shadow-color: rgba(23, 23, 23, 0.3); /* Sombra - baseada no cinza azulado */
+    --testimonial-bg: #50595C;   /* Fundo de depoimentos - cinza azulado */
+    --hero-bg: #302939;          /* Fundo hero - roxo escuro */
+    --button-bg: #E99B9B;        /* Fundo dos botões - rosa suave */
+    --button-text: #302939;      /* Texto dos botões - roxo escuro */
+    --card-border: #50595C;      /* Borda dos cards - cinza azulado */
+}
