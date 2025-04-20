@@ -27,21 +27,22 @@
 .dark-mode {
     /* Tema Escuro com nova paleta */
     --bg-color: #000000;
-    --text-color: #ffffff;
-    --primary-color: #FF9D23;
-    --secondary-color: #C14600;
-    --accent-color: #ef9610;
+    --text-color: #fffbe7;
+    --primary-color: #EBE5C2;
+    --secondary-color: #504B38;
+    --accent-color: #504B38;
     --card-bg: #2C2D34;
-    --header-border: #F2910A;
-    --footer-bg: #000000;
-    --footer-text: #EFD510;
-    --footer-link: #F2910A;
+    --header-border: #B9B28A;
+    --footer-bg: #1f1f1f;
+    --footer-text: #fffbe7;
+    --footer-link: #B9B28A;
     --shadow-color: rgba(0, 0, 0, 0.4);
 }
 
 
 /* ... (todo o restante do seu CSS permanece igual) ... */
 body {
+    padding: 20px;
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: var(--main-font);
@@ -680,6 +681,16 @@ footer {
     margin-bottom: 40px;
 }
 
+.recipes-header {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/banner-receitas.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 .recipes-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -693,47 +704,46 @@ footer {
     margin-bottom: 30px;
     justify-content: center;
 }
-.recipes-filters a {
-    text-decoration: none;
-    background-color: var(--secondary-color);
-}
-
 
 .filter-btn {
+    text-decoration: none;
     padding: 8px 16px;
     background: var(--card-bg);
-    border: 1px solid var(--primary-color);  
+    border: 1px solid var(--primary-color);  /* Usando primary-color para a borda */
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
-    color: var(--text-color);  
+    color: var(--text-color);  /* Cor do texto adaptável */
     font-weight: 500;
 }
 
 .filter-btn:hover {
-    background: var(--primary-color);
-    color: var(--bg-color); 
+    background: var(--accent-color);
+    color: var(--bg-color);  /* Texto fica na cor do fundo principal */
     transform: translateY(-2px);
     box-shadow: 0 2px 8px var(--shadow-color);
 }
 
 .filter-btn.active {
-    background: var(--primary-color);
+    background: var(--accent-color);
     color: var(--bg-color);
     border-color: var(--primary-color);
     font-weight: 600;
 }
 
+/* Melhorias específicas para cada tema */
 :root .filter-btn {
+    /* Estilo específico para tema claro */
     box-shadow: 0 2px 4px rgba(195, 70, 0, 0.1);
 }
 
 .dark-mode .filter-btn {
+    /* Estilo específico para tema escuro */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .filter-btn:hover, .filter-btn.active {
     background: var(--primary-color);
-    color: white;
+    color: var(--accent-color);
     border-color: var(--primary-color);
 }
 
@@ -768,14 +778,14 @@ footer {
 .recipe-title {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    color: var(--text-color);
+    color: var(--button-bg);
 }
 
 .recipe-title a{
     text-decoration: none;
     color: var(--text-color);
-    
 }
+
 
 .recipe-meta {
     display: flex;
@@ -849,7 +859,6 @@ header {
     padding: 8px 12px;
     font-size: 0.9rem;
 }
-
 /* Estilos para o dropdown de categorias */
 .categories-dropdown {
     position: relative;
