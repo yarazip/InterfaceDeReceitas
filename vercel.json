@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "/TodasReceitas/Receitas.html"
+      }
+    ]
+  }
+  
