@@ -63,6 +63,10 @@ header {
     z-index: 100;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 
 .logo {
     font-family: var(--logo-font);
