@@ -23,6 +23,14 @@
       {
         "source": "/esqueci",
         "destination": "/TodasReceitas/loginSenha/esquecisenha.html"
+      },
+      {
+        "source": "/styles/(.*)",
+        "destination": "/TodasReceitas/styles/$1"
+      },
+      {
+        "source": "/js/(.*)",
+        "destination": "/TodasReceitas/js/$1"
       }
     ]
   }
