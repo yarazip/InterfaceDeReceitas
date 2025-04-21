@@ -3,43 +3,6 @@
     --logo-font: 'Rock Salt', 'sans serif';
     --main-font: 'Source Sans 3', sans-serif;
 }
-:root {
-    /* Tema Claro  */
-    --bg-color: #FEF9E1;      
-    --text-color: #813102;       
-    --primary-color: #C14600;   
-    --secondary-color: #FF9D23;  
-    --accent-color: #E5D0AC;    
-    --card-bg: #FEF9E1;    
-    --header-bg: #FEF9E1;    
-    --header-border: #FF9D23;    
-    --footer-bg: #C14600;        
-    --footer-text: #FEF9E1;      
-    --button-bg: #C14600;        
-    --button-text: #FEF9E1;    
-    --hover-color: #FF9D23;      
-    --shadow-color: rgba(193, 70, 0, 0.1); 
-}
-
-
-
-.dark-mode {
-    /* Tema Escuro   */
-    --bg-color: #000000;          
-    --text-color: #FFFFFF;        
-    --primary-color: #F2910A;    
-    --secondary-color: #bb2200;  
-    --accent-color: #EFD510;      
-    --card-bg: #1a1717;           
-    --header-bg: #000000;         
-    --header-border: #ef9610;    
-    --footer-bg: #000000;        
-    --footer-text: #FFFFFF;      
-    --button-bg: #F2910A;      
-    --button-text: #000000;  
-    --hover-color: #bb2200;     
-    --shadow-color: rgba(0, 0, 0, 0.4); 
-}
 
 
 body {
@@ -161,7 +124,7 @@ header {
 
 .get-started-btn {
     padding: 8px 16px;
-    background-color: var(--primary-color);
+    background-color: var(--button-bg);
     color: white;
     border-radius: 4px;
     font-size: 14px;
@@ -504,7 +467,7 @@ header {
 }
 
 footer {
-    background-color: var(--secondary-color);
+    background-color: var(--card-bg);
     color: var(--text-color);
     padding: 60px 40px 30px;
     transition: background-color 0.3s ease;
@@ -594,106 +557,6 @@ footer {
     }
 }
 
-/* Estilos do Carrossel */
-.hero-carousel {
-    position: relative;
-    height: 500px;
-    width: 100%;
-    max-width: 100%;
-    margin: 20px auto;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px var(--shadow-color);
-    transition: box-shadow 0.3s ease;
-}
-
-.carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease;
-    height: 500px; 
-}
-
-.carousel-item {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.carousel-controls {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-    z-index: 10;
-}
-
-.carousel-control {
-    background: var(--carousel-control-bg);
-    border: none;
-    padding: 12px 16px;
-    cursor: pointer;
-    font-size: 20px;
-    border-radius: 50%;
-    margin: 0 15px;
-    transition: all 0.3s ease;
-    color: var(--text-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-}
-
-.carousel-control:hover {
-    background: var(--primary-color);
-    color: white;
-    transform: scale(1.1);
-}
-
-.carousel-indicators {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-    z-index: 10;
-}
-
-.indicator {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: var(--carousel-indicator);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.indicator.active {
-    background: var(--carousel-indicator-active);
-    transform: scale(1.2);
-    border-color: transparent;
-}
-
-/* Efeito de overlay para melhor legibilidade do texto */
-.carousel-item::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 100%);
-}
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -843,16 +706,16 @@ footer {
 }
 
 .recipe-info-card h3 {
-    color: var(--primary-color);
+    color: var(--text-color);
     margin-bottom: 15px;
 }
 
 .recipe-info-card a {
     text-decoration: none;
-    color: var(--primary-color-color);
+    color: var(--text-color);
 }
 .recipe-info-card-links :hover{
-    color: var(--secondary-color);
+    color: var(--hero-bg);
 }
 
 .redes{
@@ -872,7 +735,7 @@ footer {
 
 .info-item i {
     margin-right: 10px;
-    color: var(--primary-color);
+    color: var(--hero-bg);
 }
 
 .ingredients-list, .instructions-list {

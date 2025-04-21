@@ -5,43 +5,44 @@
 }
 :root {
     /* Tema Claro */
-    /* #FF9D23 #FEF9E1 #C14600 #E5D0AC #ffffff */
-    --bg-color: #FEF9E1;      
-    --text-color: #C14600;      
-    --primary-color: #C14600;
-    --secondary-color: #ffffff; 
-    --accent-color: #E5D0AC;  
-    --card-bg: #FEF9E1;         
-    --header-bg: #FEF9E1;    
-    --header-border: #FF9D23;
-    --footer-bg: #C14600;    
-    --footer-text: #FEF9E1;
-    --button-bg: #C14600;     
-    --button-text: #FEF9E1; 
-    --hover-color: #FF9D23;     
-    --shadow-color: rgba(193, 70, 0, 0.1); 
+    --bg-color: #fffbe7;
+    --text-color: #000000;
+    --primary-color: #EBE5C2;
+    --secondary-color: #ccccc5;
+    --accent-color: #504B38;
+    --card-bg: #e5e1cb;
+    --header-bg: #fffbe7;
+    --header-border: #B9B28A;
+    --footer-bg: #504B38;
+    --footer-text: #F8F3D9;
+    --footer-link: #B9B28A;
+    --button-bg: #4f4e4c;
+    --button-text: #FFFFFF;
+    --hover-color: #B9B28A;
+    --shadow-color: rgba(185, 178, 138, 0.1);
+    --testimonial-bg: #F8F3D9;
+    --hero-bg: #F8F3D9;
 }
-
 
 .dark-mode {
     /* Tema Escuro */
-    /* #F2910A #2C2D34 #bb2200 #EFD510 #000000 #ef9610 #1a1717 #FF9D23 #ffffff */
-    --bg-color: #000000;         
-    --text-color: #ffffff;        
-    --primary-color: #FF9D23;    
-    --secondary-color: #1a1717;  
-    --accent-color: #ef9610;     
-    --card-bg: #000000;          
-    --header-border: #F2910A; 
-    --footer-bg: #000000;    
-    --footer-text: #EFD510;     
-    --button-bg: #bb2200;         
-    --button-text: #2C2D34;     
-    --hover-color: #F2910A;      
-    --shadow-color: rgba(0, 0, 0, 0.5);  
+    --bg-color: #000000;
+    --text-color: #fffbe7;
+    --primary-color: #EBE5C2;
+    --secondary-color: #292929;
+    --accent-color: #504B38;
+    --card-bg: #2C2D34;
+    --header-border: #B9B28A;
+    --footer-bg: #1f1f1f;
+    --footer-text: #fffbe7;
+    --footer-link: #B9B28A;
+    --button-bg: #5c5c5c;
+    --button-text: #FFFFFF;
+    --hover-color: #B9B28A;
+    --shadow-color: rgba(0, 0, 0, 0.4);
+    --testimonial-bg: #1f1f1f;
+    --hero-bg: #1f1f1f;
 }
-
-
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -161,7 +162,7 @@ header {
 
 .get-started-btn {
     padding: 8px 16px;
-    background-color: var(--primary-color);
+    background-color: var(--button-bg);
     color: white;
     border-radius: 4px;
     font-size: 14px;
@@ -203,7 +204,7 @@ header {
 
 .cta-button {
     padding: 14px 28px;
-    background-color: var(--primary-color);
+    background-color: var(--button-bg);
     color: white;
     border-radius: 4px;
     font-size: 16px;
@@ -214,7 +215,7 @@ header {
 }
 
 .cta-button:hover {
-    background-color: #3b3b3b;
+    background-color: var(--accent-color);
     filter: brightness(0.9);
     transform: translateY(-2px);
 }
@@ -343,7 +344,7 @@ header {
 .template-info h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: var(--text-color);
+    color: var(--accent-color);
 }
 
 .template-info p {
@@ -398,7 +399,7 @@ header {
 .about-card h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 .about-card p, .about-card ul {
@@ -502,6 +503,11 @@ header {
     opacity: 0.8;
     max-width: 600px;
     margin: 0 auto 40px;
+}
+
+.final-cta  a{
+    background-color: var(--button-bg);
+    text-decoration: none;
 }
 
 footer {

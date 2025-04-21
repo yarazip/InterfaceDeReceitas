@@ -13,10 +13,11 @@
     --shadow-color: rgba(189, 179, 149, 0.1);
     --testimonial-bg: #F6F0F0;
     --hero-bg: #F6F0F0;
-    --button-bg: #85580a;
+    --hover-color :#C5A000;
+    --button-bg: #C5A000;
     --button-text: #FFFFFF;
 }
-    
+/* C5A000  */
 .dark-mode {
     --bg-color: #140d02;
     --text-color: #fbefbb;

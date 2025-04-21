@@ -15,20 +15,7 @@
     <header>
         <h1 class="logo">Código de Sabores</h1>
         <nav class="nav-links">
-            <div class="categories-dropdown">
-                <a href="../PaginaDasReceitas/Receitas.html">Receitas <i class="fas fa-chevron-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="../Categorias/animes.html" class="active">Anime</a>
-                    <a href="../Categorias/aves.html">Aves</a>
-                    <a href="../Categorias/bovinos.html">Carnes Bovinas</a>
-                    <a href="../Categorias/suinos.html">Carnes Suínas</a>
-                    <a href="../Categorias/sobremesa.html">Doces</a>
-                    <a href="../Categorias/massa.html">Massas</a>
-                    <a href="../Categorias/peixe.html">Peixes</a>
-                    <a href="../Categorias/vegetariano.html">Vegetarianas</a>
-                    <a href="../TodasReceitas/Receitas.html" target="_blank">Receitas</a>
-                </div>
-            </div>
+ 
             <a href="../sobre/sobre.html">Sobre Nós</a>
             <a href="../contato/contato.html">Fale Conosco</a>
         </nav>
@@ -50,6 +37,19 @@
         <p>Pratos deliciosos dos seus animes favoritos</p>
 
     </section>
+    <div class="recipes-container">
+        <div class="recipes-filters">
+            <a href="../Categorias/animes.html" class="filter-btn active">Anime</a>
+            <a href="../Categorias/aves.html" class="filter-btn">Aves</a>
+            <a href="../Categorias/bovinos.html" class="filter-btn">Carnes Bovinas</a>
+            <a href="../Categorias/suinos.html" class="filter-btn">Carnes Suínas</a>
+            <a href="../Categorias/sobremesa.html" class="filter-btn">Doces</a>
+            <a href="../Categorias/massa.html" class="filter-btn">Massas</a>
+            <a href="../Categorias/peixe.html" class="filter-btn">Peixes</a>
+            <a href="../Categorias/vegetariano.html" class="filter-btn">Vegetarianas</a>
+            <a href="../TodasReceitas/Receitas.html" class="filter-btn">Todas</a>
+        </div>
+    </div>
 
     <div class="recipes-container">
         <div class="featured-recipes">
@@ -60,7 +60,7 @@
                         <img src="../assets/Naruto.jpeg" alt="Lamen do Naruto" class="recipe-img">
                     </a>
                     <div class="recipe-info">
-                        <h3 class="recipe-title"><a href="../Receitas/LamenNaruto.html">Lamen do Naruto</a></h3>
+                        <h3 class="recipe-title"><a href="../Receitas/LamenNaruto.html">Ichiraku Miso Ramen <br> Naruto</a></h3>
                         <div class="recipe-meta">
                             <span><i class="fas fa-clock"></i> 2h 30 min</span>
                             <span><i class="fas fa-utensils"></i> 10 porções</span>
@@ -83,7 +83,7 @@
                         <img src="../assets/Chihiro.jpeg" alt="Onigiri do filme Chihiro" class="recipe-img">
                     </a>
                     <div class="recipe-info">
-                        <h3 class="recipe-title"><a href="../Receitas/OnigiriChihiro.html">Onigiri do filme A Viagem de Chihiro</a></h3>
+                        <h3 class="recipe-title"><a href="../Receitas/OnigiriChihiro.html">Onigiri Chihiro <br>Studio Ghibli</a></h3>
                         <div class="recipe-meta">
                             <span><i class="fas fa-clock"></i> 45 min</span>
                             <span><i class="fas fa-utensils"></i> 6 unidades</span>
@@ -106,7 +106,7 @@
                         <img src="../assets/profiteroleMash.jpeg" alt="Profiterole (do Mash anime)" class="recipe-img">
                     </a>
                     <div class="recipe-info">
-                        <h3 class="recipe-title"><a href="../Receitas/Profiterole.html">Profiterole (Mash Burnedead)</a></h3>
+                        <h3 class="recipe-title"><a href="../Receitas/Profiterole.html">Profiterole <br> Mash Burnedead</a></h3>
                         <div class="recipe-meta">
                             <span><i class="fas fa-clock"></i> 1h 30min</span>
                             <span><i class="fas fa-utensils"></i> 12 unidades</span>
@@ -119,6 +119,72 @@
                         <div class="recipe-author">
                             <img src="../assets/chef-mash.jpg" alt="Chef Mash" class="author-avatar">
                             <span>Chef Mash</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recipe-card">
+                    <a href="../Receitas/seaFoodPasta.html">
+                        <img src="../assets/sanjiMacarrao.jpg" alt="Sanji's Seafood Pasta" class="recipe-img">
+                    </a>
+
+                    <div class="recipe-info">
+                        <h3 class="recipe-title"><a href="../Receitas/seaFoodPasta.html">Massa de Frutos do Mar do Sanji <br>One Piece</a></h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 30min</span>
+                            <span><i class="fas fa-utensils"></i> 2 porções</span>
+                        </div>
+                        <p>Massa al dente com frutos do mar frescos e molho de vinho branco.</p>
+                        <div class="recipe-categories">
+                            <span class="category-tag">One Piece</span>
+                            <span class="category-tag">Frutos do Mar</span>
+                        </div>
+                        <div class="recipe-author">
+                            <img src="../assets/sanji-avatar.jpg" alt="Sanji" class="author-avatar">
+                            <span>Sanji</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <a href="../Receitas/luffyCarne.html">
+                        <img src="../assets/luffy.jpeg" alt="Luffy's Meat-on-the-Bone" class="recipe-img">
+                    </a>
+                    <div class="recipe-info">
+                        <h3 class="recipe-title"><a href="../Receitas/luffyCarne.html">Carne-no-Osso do Luffy <br>One Piece</a></h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 1h</span>
+                            <span><i class="fas fa-utensils"></i> 4 porções</span>
+                        </div>
+                        <p>Costela de porco assada com mel e especiarias, estilo Baratie.</p>
+                        <div class="recipe-categories">
+                            <span class="category-tag">One Piece</span>
+                            <span class="category-tag">Carnes</span>
+                        </div>
+                        <div class="recipe-author">
+                            <img src="../assets/luffy-avatar.jpg" alt="Luffy" class="author-avatar">
+                            <span>Monkey D. Luffy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <a href="../Receitas/howlOvoBacon.html">
+                        <img src="../assets/HowlBreakfast.jpeg" alt="Howl's Breakfast" class="recipe-img">
+                    </a>
+                    <div class="recipe-info">
+                        <h3 class="recipe-title"><a href="../Receitas/howlOvoBacon.html">Café da manhã do Howl (Studio Ghibli)</a></h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 20min</span>
+                            <span><i class="fas fa-utensils"></i> 1 porção</span>
+                        </div>
+                        <p>Ovos fritos, bacon crocante e pão dourado do Castelo Animado.</p>
+                        <div class="recipe-categories">
+                            <span class="category-tag">Studio Ghibli</span>
+                            <span class="category-tag">Café da Manhã</span>
+                        </div>
+                        <div class="recipe-author">
+                            <img src="../assets/howl-avatar.jpg" alt="Howl" class="author-avatar">
+                            <span>Howl Jenkins</span>
                         </div>
                     </div>
                 </div>

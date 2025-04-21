@@ -360,3 +360,25 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Inicializa
   initTheme();
+document.addEventListener('DOMContentLoaded', function() {
+    // Remove a classe active de todos os botões primeiro
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    
+    // Obtém o caminho atual da URL
+    const currentPath = window.location.pathname;
+    
+    // Encontra o botão correspondente à página atual
+    const currentPage = currentPath.split('/').pop();
+    const activeBtn = document.querySelector(`.filter-btn[href*="${currentPage}"]`);
+    
+    // Se encontrou um botão correspondente, adiciona a classe active
+    if (activeBtn) {
+        activeBtn.classList.add('active');
+    } else {
+        // Se não encontrou, ativa o botão "Todas" como padrão
+        document.querySelector('.filter-btn[href*="Receitas.html"]')?.classList.add('active');
+    }
+});
+

@@ -11,7 +11,8 @@
     --footer-link: #e8caca;
     --shadow-color: rgba(142, 22, 22, 0.1);
     --testimonial-bg: #F8EEDF;
-    --hero-bg: #F8EEDF;
+    --hero-bg: #8E1616;
+    --hover-color :#8E1616;
     --button-bg: #8E1616;
     --button-text: #FFFFFF;
 }
@@ -23,10 +24,12 @@
     --primary-color: #8E1616;
     --secondary-color: #cd6464aa;
     --accent-color: #F8EEDF;
-    --card-bg: #a70b0b;
+    --card-bg: #90050591;
     --header-border: #E8C999;
     --footer-bg: #410b0b;
     --footer-text: #F8EEDF;
+    --hero-bg: #cd6464aa;
+    --hover-color :#cd6464aa;
     --footer-link: #E8C999;
     --shadow-color: rgba(0, 0, 0, 0.2);
 }

@@ -8,8 +8,8 @@
     --card-bg: #E5D0AC;
     --header-border: #FF9D23;
     --footer-bg: #C14600;
-    --footer-text: #faedaa;
-    --footer-link: #ffe2be;
+    --footer-text: #C14600;
+    --footer-link: #C14600;
     --shadow-color: rgba(255, 157, 35, 0.1);
     --testimonial-bg: #FFF5E8;
     --hero-bg: #FEF9E1;
@@ -26,11 +26,12 @@
     --accent-color: #ef9610;
     --card-bg: #2C2D34;
     --header-border: #F2910A;
-    --footer-bg: #121212;
+    --footer-bg: #3f220276;
     --footer-text: #ef6510;
     --footer-link: #fabf77;         
     --button-bg: #bb2200;
     --button-text: #2C2D34;
+    --hero-bg:#ef6510;
     --hover-color: #F2910A;
     --shadow-color: rgba(10, 10, 9, 0.05);  
 }
