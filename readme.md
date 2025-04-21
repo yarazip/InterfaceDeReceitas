@@ -50,6 +50,20 @@ CDS/
 ├── License Arquivo de licença personalizada
   └── readme.md Este arquivo README
 ```
+
+## 🌐 Acesso ao Site
+
+Você pode acessar a interface de receitas diretamente pelo link abaixo:
+
+👉 [https://interface-de-receitas.vercel.app/](https://interface-de-receitas.vercel.app/)
+
+Explore uma variedade de receitas com uma interface moderna, responsiva e intuitiva!
+
+## 📱 **Compatível com dispositivos Android**  
+O site é totalmente responsivo e pode ser acessado facilmente pelo navegador do seu celular Android.
+
+---
+
 ## 🔮 Melhorias Futuras
 
 - 🔍 Filtro de receitas por nome ou ingredientes  
