@@ -3,6 +3,26 @@
       {
         "source": "/",
         "destination": "/TodasReceitas/Receitas.html"
+      },
+      {
+        "source": "/home",
+        "destination": "/TodasReceitas/MainView/mainview.html"
+      },
+      {
+        "source": "/sobre",
+        "destination": "/TodasReceitas/MainView/mainview.html"
+      },
+      {
+        "source": "/contato",
+        "destination": "/TodasReceitas/MainView/mainview.html"
+      },
+      {
+        "source": "/login",
+        "destination": "/TodasReceitas/loginSenha/login.html"
+      },
+      {
+        "source": "/esqueci",
+        "destination": "/TodasReceitas/loginSenha/esquecisenha.html"
       }
     ]
   }
