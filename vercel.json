@@ -10,19 +10,19 @@
       },
       {
         "source": "/sobre",
-        "destination": "/TodasReceitas/MainView/mainview.html"
+        "destination": "/MainView/mainview.html"
       },
       {
         "source": "/contato",
-        "destination": "/TodasReceitas/MainView/mainview.html"
+        "destination": "/MainView/mainview.html"
       },
       {
         "source": "/login",
-        "destination": "/TodasReceitas/loginSenha/login.html"
+        "destination": "/loginSenha/login.html"
       },
       {
         "source": "/esqueci",
-        "destination": "/TodasReceitas/loginSenha/esquecisenha.html"
+        "destination": "/loginSenha/esquecisenha.html"
       },
       {
         "source": "/styles/(.*)",
