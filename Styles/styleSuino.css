@@ -11,7 +11,8 @@
     --footer-link: #9d570c;
     --shadow-color: rgba(0, 0, 0, 0.1);
     --testimonial-bg: #F2F6D0;
-    --hero-bg: #F2F6D0;
+    --hero-bg: #816300;           
+    --hover-color:#886905;
     --button-bg: #D98324;
     --button-text: #FFFFFF;
 }
@@ -28,7 +29,7 @@
     --footer-bg: #2d2006;
     --footer-text: #FFF7D4;
     --footer-link: #FFD95A;
-    --hero-bg: #fefefe;           
+    --hero-bg: #FFD95A;           
     --hover-color:#FFD95A;
     --shadow-color: rgba(0, 0, 0, 0.2);
     --button-bg: #4a3705;

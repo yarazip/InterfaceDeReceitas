@@ -9,11 +9,11 @@
     --footer-bg: #90C67C;
     --footer-text: #E1EEBC;
     --footer-link: #328E6E;
-    --shadow-color: rgba(50, 142, 110, 0.1);
+    --shadow-color: rgba(0, 0, 0, 0.1);
     --testimonial-bg: #E1EEBC;
-    --hero-bg: #E1EEBC;
+    --hero-bg: #3c5200;
     --button-bg: #328E6E;
-    --hover-color :#7fb46c;
+    --hover-color :#31651e;
     --button-text: #FFFFFF;
 }
 
@@ -30,6 +30,8 @@
     --footer-text: #E1EEBC;
     --footer-link: #2bad72;
     --shadow-color: rgba(24, 35, 15, 0.4);
+    --hero-bg:#8fecc2;
+    --hover-color: #04cb72;    
 }
 
     

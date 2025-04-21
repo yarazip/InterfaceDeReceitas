@@ -12,7 +12,8 @@
     --footer-link: #ca23ae;    
     --shadow-color: rgba(230, 157, 184, 0.2);  
     --testimonial-bg: #FFD0C7;    
-    --hero-bg: #F1E7E7;        
+    --hero-bg:#dc3ab9;
+    --hover-color: #f700d2;        
     --button-bg: #E69DB8;      
     --button-text: #FFFFFF;     
 }

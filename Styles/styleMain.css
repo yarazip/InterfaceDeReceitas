@@ -347,6 +347,10 @@ header {
     color: var(--accent-color);
 }
 
+.template-info a{
+    color: var(--text-color);
+}
+
 .template-info p {
     color: var(--text-color);
     opacity: 0.7;
