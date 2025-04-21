@@ -569,6 +569,10 @@ footer {
     color: var(--footer-link);
 }
 
+.social-icons a{
+    color: var(--footer-link);
+}
+
 
 @media (max-width: 768px) {
     header {
